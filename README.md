@@ -10,3 +10,9 @@ Stockholm, Sweden was the first city to host a “Plogga” in 2016. This event 
 Plogging is a community-driven web platform that encourages users to pick up trash while walking, running, or hiking. Where fitness and environmentalism can go hand-in-hand.
 
 Whether you're jogging around your neighborhood or organizing a cleanup event. Plogging helps you track your impact, connect with others, and keep your community clean.
+
+<img src="assets/Plogging_with_Coastal_Striders_-_FUNK9730_(42405061590).jpg" width="700"/>
+
+<img src="assets/1h_plogging_in_Savedalen_VastraGotaland_Sweden_May29_2020.jpg" width="700"/>
+
+<img src="assets/1h_suburban_plogging_Frantorp_VastraGotaland_Sweden_May31_2020.jpg" width="700"/>
