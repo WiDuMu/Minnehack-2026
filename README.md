@@ -11,8 +11,18 @@ Plogging is a community-driven web platform that encourages users to pick up tra
 
 Whether you're jogging around your neighborhood or organizing a cleanup event. Plogging helps you track your impact, connect with others, and keep your community clean.
 
+It comes from the combination of two swedish words Plocka = "pick up" and Jogga = "jog". combining Plocka and Jogga = Plogga. 
+
+
+# example of joggers picking up trash
 <img src="assets/Plogging_with_Coastal_Striders_-_FUNK9730_(42405061590).jpg" width="700"/>
 
+# example of trash that can be picked up from PLogging
 <img src="assets/1h_plogging_in_Savedalen_VastraGotaland_Sweden_May29_2020.jpg" width="700"/>
 
 <img src="assets/1h_suburban_plogging_Frantorp_VastraGotaland_Sweden_May31_2020.jpg" width="700"/>
+
+
+## website design
+
+
