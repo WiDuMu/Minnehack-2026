@@ -16,6 +16,7 @@ const openActivityDialog = document.getElementById("open_activity_dialog");
 const closeActivityDialog = document.getElementById("close_activity_dialog");
 
 openActivityDialog.addEventListener("click", () => {
+    alert("Button pressed!");
     activityDialog.show();
 });
 
