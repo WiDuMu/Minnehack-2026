@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/beercss@4.0.7/dist/cdn/beer.min.css" rel="stylesheet">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@4.0.7/dist/cdn/beer.min.js"></script>
+    <script type="module"
+        src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@1.1.4/dist/cdn/material-dynamic-colors.min.js"></script>
+    <title>Test plogging thing</title>
+    <script src="./script.js" type="module"></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <main>
+        <div id="tab_activity" class="page padding active">
+            <h5>Current activity</h5>
+            <article class="border round">
+                <h5>Run</h5>
+                <h3>00:22</h3>
+                <p>Some text here</p>
+            </article>
+
+            <h2 id="activity_clock">00:22</h2>
+        </div>
+        <div id="tab_leaderboard" class="page padding">
+            <h5>Leaderboard</h5>
+            <ul class="list border">
+                <li>Item</li>
+                <li>Item</li>
+                <li>Item</li>
+                <li>Item</li>
+            </ul>
+
+        </div>
+        <div id="tab_group" class="page padding">
+            <h5>Guidelines</h5>
+        </div>
+        <div id="tab_settings" class="page padding">
+            <h5>Acessibility</h5>
+        </div>
+    </main>
+    <nav class="tabbed large bottom">
+        <a id="nav_activity" class="active">
+            <i>info</i>
+            <span>Activity</span>
+        </a>
+        <a id="nav_leaderboard" class="">
+            <i>style</i>
+            <span>Leaderboard</span>
+        </a>
+        <a id="nav_group" class="">
+            <i>design_services</i>
+            <span>Guidelines</span>
+        </a>
+        <a id="nav_settings">
+            <i>accessibility_new</i>
+            <span>Acessibility</span>
+        </a>
+    </nav>
+
+
+</body>
+
+</html>
