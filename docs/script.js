@@ -16,7 +16,6 @@ const openActivityDialog = document.getElementById("open_activity_dialog");
 const closeActivityDialog = document.getElementById("close_activity_dialog");
 
 openActivityDialog.addEventListener("click", () => {
-    window.location = "https://example.com";
     activityDialog.show();
 });
 
