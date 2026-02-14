@@ -14,15 +14,19 @@
 </head>
 
 <body>
-    <main>
+    <main class="responsive">
         <div id="tab_activity" class="page padding active">
             <h5>Current activity</h5>
             <article class="border round">
                 <h5>Run</h5>
-                <h3>00:22</h3>
+                <span class="center"><h3 class="clock">00:22</h3></span>
+                <button>stop run</button>
             </article>
+            <button class="extend square">
+                <i>add</i>
+                <span>New Activity</span>
+            </button>
 
-            <h2 id="activity_clock">00:22</h2>
         </div>
         <div id="tab_leaderboard" class="page padding">
             <h5>Leaderboard</h5>
