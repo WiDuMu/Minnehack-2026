@@ -17,11 +17,11 @@
     <main class="responsive">
         <div id="tab_activity" class="view_tab page padding active">
             <h5>Current activity</h5>
-            <dialog class="top">
+            <dialog id="activity_dialog" class="top">
                 <h5>Top</h5>
                 <div>Some text here</div>
                 <nav class="right-align">
-                    <button class="border">Cancel</button>
+                    <button id="close_activity_dialog" class="border">Cancel</button>
                     <button>Confirm</button>
                 </nav>
             </dialog>
@@ -40,7 +40,7 @@
                 </article>
 
             </div>
-            <button class="add_button extend square">
+            <button id="open_activity_dialog" class="add_button extend square">
                 <i>add</i>
                 <span>New Activity</span>
             </button>

@@ -11,6 +11,18 @@ const tabSettings = document.getElementById("tab_settings");
 let currentNav = navActivity;
 let currentTab = tabActivity;
 
+const activityDialog = document.getElementById("activity_dialog");
+const openActivityDialog = document.getElementById("open_activity_dialog");
+const closeActivityDialog = document.getElementById("close_activity_dialog");
+
+openActivityDialog.addEventListener("click", () => {
+    activityDialog.show();
+});
+
+closeActivityDialog.addEventListener("click", () => {
+    activityDialog.close();
+});
+
 navActivity.addEventListener("click", () => {
     currentNav.classList.remove("active");
     currentTab.classList.remove("active");
