@@ -14,21 +14,51 @@
    }
 }
 
-.bg-leaves {
-    background-image:  url("./assets/200 by 200 pixel fall image 16 leaves.jpg");
+#bg_buttons > a > img {
+    height: 100px;
+    aspect-ratio: 1;
 }
 
-.bg-8leaves {
-    background-image: url("./assets/8bit_leaves.png");
+.bg-1 {
+    background-image:  url("./assets/3-maple-leaves.png");
+}
+.bg-2 {
+    background-image:  url("./assets/8bit_leaves.png");
+}
+.bg-3 {
+    background-image:  url("./assets/basic_8_bit_background.png");
 }
 
-.bg-8trash {
-    background-image: url("./assets/8bit-trash-pattern.png");
+.bg-5 {
+    background-image:  url("./assets/trash_bags_infinite.png");
 }
+.bg-6 {
+    background-image:  url("./assets/shamrock green.png");
+}
+.bg-7 {
+    background-image:  url("./assets/3-large-leaves.png");
+}
+.bg-8 {
+    background-image:  url("./assets/16-fall-leaves.png");
+}
+
 
 .bg-guy {
     background-image: url("./assets/plogging_profile_photo_1.jpg");
 }
+
+/*
+./assets/3-maple-leaves.png
+./assets/8bit_leaves.png
+./assets/basic_8_bit_background.png
+./assets/8bit-trash-pattern.png
+./assets/trash_bags_infinite.png
+./assets/shamrock green.png
+./assets/3-large-leaves.png
+./assets/16-fall-leaves
+./assets/brown-leaf.png
+./assets/plogging_profile_photo_1.jpg
+*/
 
 html, body {
     /* max-height: 100vh; */
