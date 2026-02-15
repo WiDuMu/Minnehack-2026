@@ -59,8 +59,13 @@ h2{
     background: #fbd271;
     border-radius: 16px;
 }
-
-
+/* attempted to remove the blue highlight from anchor tag... didnt work
+a:focus{
+ outline: none; 
+ border: 2px solid #30253e;  
+ box-shadow: 0 0 0 2px #30253e;
+}
+*/
 .myButton {
   background-color: #fbd271;
   /* #e7bd8b*/
