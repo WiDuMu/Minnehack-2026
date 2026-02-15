@@ -39,31 +39,31 @@
                 <h5>Top</h5>
                 <div class="field label prefix border">
                     <i>attach_file</i>
-                    <input type="file">
+                    <input id="activity_file_input" type="file">
                     <input type="text">
                     <label>Activity image</label>
                 </div>
                 <div class="field label prefix border">
                     <i>schedule</i>
-                    <input type="time">
+                    <input id="activity_start_time_input" type="time">
                     <label>Start Time</label>
                 </div>
                 <div class="field label prefix border">
                     <i>schedule</i>
-                    <input type="time">
+                    <input id="activity_end_time_input" type="time">
                     <label>End Time</label>
                 </div>
 
                 <div class="field label prefix border">
                     <i>numbers</i>
-                    <input type="number">
+                    <input id="activity_bags_input" type="number">
                     <label>Bags</label>
                 </div>
 
 
                 <nav class="right-align">
                     <button type="button" id="close_activity_dialog" class="border">Cancel</button>
-                    <button type="button">Confirm</button>
+                    <button type="button" id="submit_activity_dialog">Confirm</button>
                 </nav>
             </dialog>
 

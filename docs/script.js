@@ -15,11 +15,31 @@ let currentTab = tabActivity;
 
 const activityDialog = document.getElementById("activity_dialog");
 const openActivityDialog = document.getElementById("open_activity_dialog");
+const submitActivityDialog = document.getElementById("submit_activity_dialog");
 const closeActivityDialog = document.getElementById("close_activity_dialog");
+
+const activityFileInput = document.getElementById("activity_file_input");
+const activityStartTimeInput = document.getElementById("activity_start_time_input");
+const activityEndTimeInput = document.getElementById("activity_end_time_input");
+const activityBagsInput = document.getElementById("activity_bags_input");
+
 
 openActivityDialog.addEventListener("click", () => {
     activityDialog.show();
     createCard("./assets/1h_suburban_plogging_Frantorp_VastraGotaland_Sweden_May31_2020.jpg", new Date(Date.now()), "1:00", Math.random());
+});
+
+submitActivityDialog.addEventListener("click", () => {
+    const imageURL = URL.createObjectURL(activityFileInput.files[0]);
+    const startTime = new Date(activityStartTimeInput.value);
+    const endTime = new Date(activityEndTimeInput.value);
+    const duration = endTime - startTime;
+    const bags = new Number(activityBagsInput.value);
+    createCard(imageURL, new Date(Date.now()), duration, bags);
+    console.log(activityFileInput.files);
+    console.log(activityStartTimeInput.value);
+    console.log(activityEndTimeInput.value);
+    console.log(activityBagsInput.value);
 });
 
 closeActivityDialog.addEventListener("click", () => {
