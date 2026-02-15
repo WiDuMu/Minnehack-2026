@@ -26,7 +26,7 @@ const activityBagsInput = document.getElementById("activity_bags_input");
 
 openActivityDialog.addEventListener("click", () => {
     activityDialog.show();
-    createCard("./assets/1h_suburban_plogging_Frantorp_VastraGotaland_Sweden_May31_2020.jpg", new Date(Date.now()), "1:00", Math.random());
+    // createCard("./assets/1h_suburban_plogging_Frantorp_VastraGotaland_Sweden_May31_2020.jpg", new Date(Date.now()), "1:00", Math.random());
 });
 
 submitActivityDialog.addEventListener("click", () => {
@@ -37,9 +37,11 @@ submitActivityDialog.addEventListener("click", () => {
     const bags = new Number(activityBagsInput.value);
     createCard(imageURL, new Date(Date.now()), duration, bags);
     console.log(activityFileInput.files);
-    console.log(activityStartTimeInput.value);
-    console.log(activityEndTimeInput.value);
+    console.log(activityStartTimeInput.value, startTime);
+    console.log(activityEndTimeInput.value, endTime);
+    console.log(duration);
     console.log(activityBagsInput.value);
+    activityDialog.close();
 });
 
 closeActivityDialog.addEventListener("click", () => {
