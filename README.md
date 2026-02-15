@@ -2,9 +2,9 @@
 
 # Clean Sweap
 
-## what is Plogging?
+## what is Clean Sweap?
 
-Jogging + Picking up litter and trash
+Clean Sweap was insipred by Plogging which is, Jogging + Picking where you up litter and trash while jogging.
 
 Plogging comes from the swedish term "plogga".
 Stockholm, Sweden was the first city to host a “Plogga” in 2016. This event combined a jogging with picking up litter. "Plogga" is an activity where you picking up trash while jogging. It also reffers to running, biking, skatboarding, hiking,  or other. Plogging is a change of attitude and ploggers are proud garbage collectors who can do something for the environment and health.
