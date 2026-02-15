@@ -3,6 +3,7 @@ const pfpInput = document.getElementById("pfp_file_input");
 const activityGreeting = document.getElementById("activity_greeting");
 const profileName = document.getElementById("profile_name");
 const settingsPFP = document.getElementById("settings_pfp");
+const bgButtons = document.querySelectorAll("#bg_buttons > a");
 
 pfpInput.value = "";
 
@@ -22,6 +23,15 @@ pfpInput.addEventListener("change", () => {
     settingsPFP.src = pfpURL;
     window.pfpURL = pfpURL;
 });
+console.log(bgButtons);
+for (const button of bgButtons) {
+    button.addEventListener("click", e => {
+        const bg = e.target.parentElement.getAttribute("data_bg");
+        document.body.className = "";
+        document.body.className = bg;
+        console.log();
+    });
+}
 
 
 

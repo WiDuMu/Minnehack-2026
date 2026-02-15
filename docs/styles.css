@@ -14,10 +14,17 @@
    }
 }
 
+.bg-leaves {
+    background-image:  url("./assets/200 by 200 pixel fall image 16 leaves.jpg");
+}
+
+.bg-guy {
+    background-image: url("./assets/plogging_profile_photo_1.jpg");
+}
+
 html, body {
     /* max-height: 100vh; */
     max-width: 100vw;
-    background-image: url("./assets/200 by 200 pixel fall image 16 leaves.jpg");
     background-size: 100px;
     animation: shifting 900s linear infinite;
 }
@@ -104,4 +111,8 @@ li.space-between {
 .cards_list {
     height: 100%;
     overflow: scroll;
+}
+
+.grid-center {
+    justify-content: center;
 }
