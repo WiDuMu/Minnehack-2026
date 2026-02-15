@@ -1,9 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap');
 
+@keyframes shifting {
+   0% {
+      background-position: 0% 0%;
+   }
+
+   50% {
+      background-position: 100% 100%;
+   }
+
+   100% {
+      background-position: 0% 0%;
+   }
+}
+
 html, body {
     /* max-height: 100vh; */
     max-width: 100vw;
+    background-image: url("./assets/200 by 200 pixel fall image.png");
+    background-size: 100px;
+    animation: shifting 900s linear infinite;
 }
+
+.v-margin-1 {
+    margin-bottom: 1em;
+}
+
+/* .pill {
+    background: var(--surface);
+    margin: 1em;
+} */
+
+/* .pill::before {
+    background: var(--surface);
+    border-radius: 50%;
+    padding: 0.5em;
+    content: "";
+    margin: 1em;
+} */
 
 .center {
     display: flex;
@@ -26,9 +60,8 @@ html, body {
     width: 100%;
 }
 
-/* #tab_activity {
-    overflow: scroll;
-} */
+#tab_activity {
+    
 
 .cards_list {
     height: 100%;
