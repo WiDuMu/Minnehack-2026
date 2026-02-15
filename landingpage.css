@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(to right, #6CA651, #29a329) ;
+    background: #839958 ;
     min-height: 10%;
 }
 
@@ -12,18 +12,23 @@ p{
 }
 .ploggingPeopleImg{
     max-width: 50%;
-    max-height: 50%;
+    
 }
 .welcomeContain{
     display: flex;
+    background: linear-gradient(to right, #80B9b1,#94C784);
 }
 .welcomeBox{
-    flex: 1;
-    background-color: purple;
+    flex-grow: .35;
+    /*background-color: purple;*/
+    
 }
 .welcomeimg{
     flex: 1;
-    background-color: orange;
+    /*background-color: orange;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .questionBox{
@@ -31,23 +36,58 @@ p{
     justify-content: left;
     align-content: left ;
     margin: 2px 20px;
-    font-size: 3em;
+    font-size: 2em;
 }
 .myButton {
-  background-color:blue ; 
+  background-color: #6B7445;
   border: none;
   color: orange; 
-  padding: 15px 32px;
+  padding: 16px 64px;
   text-align: right;
   text-decoration: none; 
   display: inline-block; 
   font-size: 16px; 
-  margin: 2px 25%; 
+  margin: 2px 23%; 
   cursor: pointer; 
-  border-radius: 8px;
+  
   
 }
 
 .myButton:hover {
-  background-color: orange; /* Darker green on hover */
+  background-color: #4D9078; /* Darker green on hover */
+  color: #6B7445;
+}
+
+.firstTextContainer{
+ display: flex;
+ height: 200px;
+}
+.secondTextContainer{
+ display: flex;
+ height: 200px;
+}
+.thirdTextContainer{
+ display: flex;
+ height: 200px;
+}
+.answerBox{
+    text-align: left;
+}
+.textDiv1-1{
+    flex: 1; 
+}
+.textDiv1-2{
+    flex: 2;
+}
+.textDiv2-1{
+    flex: 1; 
+}
+.textDiv2-2{
+    flex: 2;
+}
+.textDiv3-1{
+    flex: 1;
+}
+.textDiv3-2{
+    flex:2;
 }
