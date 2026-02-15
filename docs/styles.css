@@ -18,6 +18,14 @@
     background-image:  url("./assets/200 by 200 pixel fall image 16 leaves.jpg");
 }
 
+.bg-8leaves {
+    background-image: url("./assets/8bit_leaves.png");
+}
+
+.bg-8trash {
+    background-image: url("./assets/8bit-trash-pattern.png");
+}
+
 .bg-guy {
     background-image: url("./assets/plogging_profile_photo_1.jpg");
 }
