@@ -1,0 +1,39 @@
+body{
+    background: linear-gradient(to right, #6CA651, #29a329) ;
+    min-height: 10%;
+}
+
+h1 {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 5em;
+}
+p{
+    text-align: right;
+}
+
+.questionBox{
+    display: flex;
+    justify-content: left;
+    align-content: left ;
+    margin: 2px 20px;
+    font-size: 3em;
+}
+.myButton {
+  background-color:blue ; 
+  border: none;
+  color: orange; 
+  padding: 15px 32px;
+  text-align: right;
+  text-decoration: none; 
+  display: inline-block; 
+  font-size: 16px; 
+  margin: 2px 80%; 
+  cursor: pointer; 
+  border-radius: 8px;
+  
+}
+
+.myButton:hover {
+  background-color: orange; /* Darker green on hover */
+}
