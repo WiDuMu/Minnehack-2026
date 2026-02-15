@@ -1,5 +1,7 @@
 # Minnehack-2026
 
+# Plogging
+
 ## what is Plogging?
 
 JOGGING + PICKING UP LITTER AND TRASH
