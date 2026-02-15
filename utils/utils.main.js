@@ -1,6 +1,5 @@
 import { ploggingData } from '../data.js';
 
-// Sorting logic (Highest Trash in Liter first)
 function leaderBoard() {
     const rankedData = ploggingData.sort((a, b) => b.trashVolume - a.trashVolume);
     return rankedData
@@ -8,7 +7,6 @@ function leaderBoard() {
 
 leaderBoard()
 
-// Comunity status
 function totalKms() {
     const total = ploggingData.reduce((acc, currentPlog) => {
         return acc + currentPlog.impactKm
@@ -52,6 +50,17 @@ function serachPlogger(query) {
     );
 }
 
-const result = postNewPlog("varshith", 10.2, 1)
-console.log(result)
-console.log(ploggingData)
+
+function timePasses(start, end) {
+
+    const startTime = new Date(`2026-02-15T${start}:00`);
+    const endTime = new Date(`2026-02-15T${end}:00`);
+
+    const totalMinutes = (endTime - startTime) / (1000 * 60);
+
+    const hours = Math.floor(totalMinutes / 60);
+    const mins = totalMinutes % 60;
+
+    return `${hours}h:${mins}m`
+}
+
