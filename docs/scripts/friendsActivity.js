@@ -62,7 +62,7 @@ export function updateFriends(cards) {
             totalBags += entry.weeklyBags;
             addFriendActivity(entry);
         }
-        groupHeading.textContent = `This week you and your friends spent ${seconds_to_time(totalTime)}, and cleaned up ${totalBags} bags!`;
+        groupHeading.textContent = `Your group spent ${seconds_to_time(totalTime)}, and got ${totalBags} bags!`;
     })
     .catch((e) => {
         alert("Unable to load leaderboard data");
