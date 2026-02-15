@@ -4,9 +4,9 @@ const cardTemplate = document.getElementById("card_template");
 /**
  * Creates a new card in the list
  * @param {URL | string} image 
- * @param {*} date 
+ * @param {Date} date 
  * @param {*} duration 
- * @param {*} bags 
+ * @param {number} bags 
  */
 export function createCard(image, date, duration, bags) {
     const neuCard = cardTemplate.content.cloneNode(true);
@@ -14,10 +14,16 @@ export function createCard(image, date, duration, bags) {
     const cardDate = neuCard.querySelector(".card_date");
     const cardClock = neuCard.querySelector(".card_clock");
     const cardBags = neuCard.querySelector(".card_bags");
+
+    let bagsRounded = bags.toFixed(2);
     
     cardImage.src = image;
+    cardDate.textContent = date.toLocaleDateString();
+    cardClock.textContent = duration;
+    cardBags.textContent = `${bagsRounded} bags`;
 
-    
+
+
 
     cardsList.appendChild(neuCard);
 }

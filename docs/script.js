@@ -19,7 +19,7 @@ const closeActivityDialog = document.getElementById("close_activity_dialog");
 
 openActivityDialog.addEventListener("click", () => {
     activityDialog.show();
-    createCard("./assets/1h_suburban_plogging_Frantorp_VastraGotaland_Sweden_May31_2020.jpg", "", "", "");
+    createCard("./assets/1h_suburban_plogging_Frantorp_VastraGotaland_Sweden_May31_2020.jpg", new Date(Date.now()), "1:00", Math.random());
 });
 
 closeActivityDialog.addEventListener("click", () => {

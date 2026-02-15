@@ -26,9 +26,9 @@ html, body {
     width: 100%;
 }
 
-#tab_activity {
+/* #tab_activity {
     overflow: scroll;
-}
+} */
 
 .cards_list {
     height: 100%;
