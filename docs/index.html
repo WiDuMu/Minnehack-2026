@@ -13,16 +13,57 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 
+<template id="card_template">
+    <article class="border round no-padding">
+        <img class="card_image responsive extra" src="./assets/Plogging_with_Coastal_Striders_-_FUNK9730_(42405061590).jpg">
+        <div class="padding">
+            <span class="card_date center">
+                <h5>Tuesday, January 1st, 2026</h5>
+            </span>
+            <span class="card_clock center">
+                <h3 class="clock">00:22</h3>
+            </span>
+            <span class="card_bags center">
+                <h3 class="">1 bag</h3>
+            </span>
+        </div>
+    </article>
+</template>
+
+
 <body>
     <main class="responsive">
         <div id="tab_activity" class="view_tab page padding active">
             <h5>Current activity</h5>
             <dialog id="activity_dialog" class="top">
                 <h5>Top</h5>
-                <div>Some text here</div>
+                <div class="field label prefix border">
+                    <i>attach_file</i>
+                    <input type="file">
+                    <input type="text">
+                    <label>Activity image</label>
+                </div>
+                <div class="field label prefix border">
+                    <i>schedule</i>
+                    <input type="time">
+                    <label>Start Time</label>
+                </div>
+                <div class="field label prefix border">
+                    <i>schedule</i>
+                    <input type="time">
+                    <label>End Time</label>
+                </div>
+
+                <div class="field label prefix border">
+                    <i>numbers</i>
+                    <input type="number">
+                    <label>Bags</label>
+                </div>
+
+
                 <nav class="right-align">
-                    <button id="close_activity_dialog" class="border">Cancel</button>
-                    <button>Confirm</button>
+                    <button type="button" id="close_activity_dialog" class="border">Cancel</button>
+                    <button type="button">Confirm</button>
                 </nav>
             </dialog>
 

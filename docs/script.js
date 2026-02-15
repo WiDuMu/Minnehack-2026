@@ -1,3 +1,5 @@
+import { createCard } from "./scripts/activityList.js";
+
 const navActivity = document.getElementById("nav_activity");
 const navLeaderboard = document.getElementById("nav_leaderboard");
 const navGroup = document.getElementById("nav_group");
@@ -17,6 +19,7 @@ const closeActivityDialog = document.getElementById("close_activity_dialog");
 
 openActivityDialog.addEventListener("click", () => {
     activityDialog.show();
+    createCard("./assets/1h_suburban_plogging_Frantorp_VastraGotaland_Sweden_May31_2020.jpg", "", "", "");
 });
 
 closeActivityDialog.addEventListener("click", () => {
