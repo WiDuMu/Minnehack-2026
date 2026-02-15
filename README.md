@@ -1,6 +1,6 @@
 # Minnehack-2026
 
-# Plogging
+# Clean Sweap
 
 ## what is Plogging?
 
@@ -23,9 +23,6 @@ It comes from the combination of two swedish words Plocka = "pick up" and Jogga 
 <img src="docs/assets/1h_plogging_in_Savedalen_VastraGotaland_Sweden_May29_2020.jpg" width="700"/>
 
 <img src="docs/assets/1h_suburban_plogging_Frantorp_VastraGotaland_Sweden_May31_2020.jpg" width="700"/>
-
-
-# How to run code locally
 
 
 
