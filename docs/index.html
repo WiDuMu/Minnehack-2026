@@ -32,12 +32,14 @@
 </template>
 
 <template id="leaderboard_template">
-    <li class="space-between">
-        <img class="leaderboard_pfp" src="assets/single brown leaf on a little green background.jpg">
-        <span class="leaderboard_name">Jimmy</span>
-        <span class="leaderboard_duration">30 minutes</span>
-        <span class="leaderboard_bags">3 bags</span>
-    </li>
+    <tr>
+        <td>
+            <img class="leaderboard_pfp" src="assets/single brown leaf on a little green background.jpg">
+        </td>
+        <td class="leaderboard_name">Example</td>
+        <td class="leaderboard_duration">30m</td>
+        <td class="leaderboard_bags">1.0</td>
+    </tr>
 </template>
 
 
@@ -112,7 +114,20 @@
                     </nav>
                 </span></header>
             <article class="border round">
-                <ul id="leaderboard_list" class="surface-background list border  width-100">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>PFP</th>
+                            <th>Name</th>
+                            <th>Time spent</th>
+                            <th>Bags</th>
+                        </tr>
+                    </thead>
+                    <tbody id="leaderboard_list">
+
+                    </tbody>
+                </table>
+                <ul class="surface-background list border  width-100">
                 </ul>
             </article>
         </div>
