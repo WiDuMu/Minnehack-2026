@@ -1,7 +1,7 @@
 [
     {
-        "name": "Ursula",
-        "pfpSrc": "./assets/plogging_profile_photo_1.jpg",
+        "name": "DAniel",
+        "pfpSrc": "./assets/plogging_profile_photo_3.jpg",
         "imgSrc": "./assets/1h_plogging_in_Savedalen_VastraGotaland_Sweden_May29_2020.jpg",
         "recentTime": "00:20",
         "recentBags": 2.0,
@@ -10,7 +10,7 @@
     },
     {
         "name": "Vicky",
-        "pfpSrc": "./assets/plogging_profile_photo_1.jpg",
+        "pfpSrc": "./assets/plogging_profile_photo_2.jpg",
         "imgSrc": "./assets/1h_suburban_plogging_Frantorp_VastraGotaland_Sweden_May31_2020.jpg",
         "recentTime": "00:46",
         "recentBags": 1.5,

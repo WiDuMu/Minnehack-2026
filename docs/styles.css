@@ -78,6 +78,10 @@ li.space-between {
     align-items: center;
 }
 
+.font-large {
+    font-size: 40px;
+}
+
 .clock {
     font-family: "Kode Mono", "Roboto", sans-serif;
 }

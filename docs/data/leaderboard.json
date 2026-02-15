@@ -1,22 +1,182 @@
 [
-    { "id": 1, "ploggerName": "Varshith Vajinapelli", "hours": 5.2, "trashVolume": 3, "imgUrl": "/assets/p1.jpg", "timeStamp": "2026-02-14T10:00:00.000Z" },
-    { "id": 2, "ploggerName": "Sarah Chen", "hours": 8.7, "trashVolume": 5, "imgUrl": "/assets/p2.jpg", "timeStamp": "2026-02-14T10:15:00.000Z" },
-    { "id": 3, "ploggerName": "Marcus Thorne", "hours": 3.1, "trashVolume": 2, "imgUrl": "/assets/p3.jpg", "timeStamp": "2026-02-14T10:30:00.000Z" },
-    { "id": 4, "ploggerName": "Elena Rodriguez", "hours": 12.4, "trashVolume": 7, "imgUrl": "/assets/p4.jpg", "timeStamp": "2026-02-14T11:00:00.000Z" },
-    { "id": 5, "ploggerName": "Aarav Patel", "hours": 6.8, "trashVolume": 4, "imgUrl": "/assets/p5.jpg", "timeStamp": "2026-02-14T11:20:00.000Z" },
-    { "id": 6, "ploggerName": "Jordan Smith", "hours": 4.5, "trashVolume": 1, "imgUrl": "/assets/p6.jpg", "timeStamp": "2026-02-14T11:45:00.000Z" },
-    { "id": 7, "ploggerName": "Yuki Tanaka", "hours": 9.2, "trashVolume": 6, "imgUrl": "/assets/p7.jpg", "timeStamp": "2026-02-14T12:00:00.000Z" },
-    { "id": 8, "ploggerName": "Chloe Dupont", "hours": 2.5, "trashVolume": 3, "imgUrl": "/assets/p8.jpg", "timeStamp": "2026-02-14T12:30:00.000Z" },
-    { "id": 9, "ploggerName": "Liam Wilson", "hours": 11.1, "trashVolume": 8, "imgUrl": "/assets/p9.jpg", "timeStamp": "2026-02-14T13:00:00.000Z" },
-    { "id": 10, "ploggerName": "Sofia Rossi", "hours": 7.3, "trashVolume": 4, "imgUrl": "/assets/p10.jpg", "timeStamp": "2026-02-14T13:15:00.000Z" },
-    { "id": 11, "ploggerName": "David Muller", "hours": 5.9, "trashVolume": 2, "imgUrl": "/assets/p11.jpg", "timeStamp": "2026-02-14T13:40:00.000Z" },
-    { "id": 12, "ploggerName": "Amara Okafor", "hours": 14.2, "trashVolume": 10, "imgUrl": "/assets/p12.jpg", "timeStamp": "2026-02-14T14:00:00.000Z" },
-    { "id": 13, "ploggerName": "Lucas Brown", "hours": 3.8, "trashVolume": 2, "imgUrl": "/assets/p13.jpg", "timeStamp": "2026-02-14T14:10:00.000Z" },
-    { "id": 14, "ploggerName": "Isabella Garcia", "hours": 6.1, "trashVolume": 3, "imgUrl": "/assets/p14.jpg", "timeStamp": "2026-02-14T14:30:00.000Z" },
-    { "id": 15, "ploggerName": "Noah Kim", "hours": 8.0, "trashVolume": 5, "imgUrl": "/assets/p15.jpg", "timeStamp": "2026-02-14T14:55:00.000Z" },
-    { "id": 16, "ploggerName": "Emma Wright", "hours": 4.9, "trashVolume": 1, "imgUrl": "/assets/p16.jpg", "timeStamp": "2026-02-14T15:10:00.000Z" },
-    { "id": 17, "ploggerName": "Oskar Nielsen", "hours": 10.5, "trashVolume": 7, "imgUrl": "/assets/p17.jpg", "timeStamp": "2026-02-14T15:30:00.000Z" },
-    { "id": 18, "ploggerName": "Zara Ahmed", "hours": 2.2, "trashVolume": 2, "imgUrl": "/assets/p18.jpg", "timeStamp": "2026-02-14T15:45:00.000Z" },
-    { "id": 19, "ploggerName": "Finn O'Connor", "hours": 7.7, "trashVolume": 4, "imgUrl": "/assets/p19.jpg", "timeStamp": "2026-02-14T16:00:00.000Z" },
-    { "id": 20, "ploggerName": "Maya Lin", "hours": 5.5, "trashVolume": 3, "imgUrl": "/assets/p20.jpg", "timeStamp": "2026-02-14T16:20:00.000Z" }
+    {
+        "id": 1,
+        "ploggerName": "Varshith Vajinapelli",
+        "hours": 5.2,
+        "trashVolume": 3,
+        "imgUrl": "/assets/p1.jpg",
+        "pfpSrc": "./assets/plogging_trash_bag_12.jpg",
+        "timeStamp": "2026-02-14T10:00:00.000Z"
+    },
+    {
+        "id": 2,
+        "ploggerName": "Sarah Chen",
+        "hours": 8.7,
+        "trashVolume": 5,
+        "imgUrl": "/assets/p2.jpg",
+        "pfpSrc": "./assets/plogging_trash_bag_8.jpg",
+        "timeStamp": "2026-02-14T10:15:00.000Z"
+    },
+    {
+        "id": 3,
+        "ploggerName": "Marcus Thorne",
+        "hours": 3.1,
+        "trashVolume": 2,
+        "imgUrl": "/assets/p3.jpg",
+        "pfpSrc": "./assets/plogging_profile_photo_1.jpg",
+        "timeStamp": "2026-02-14T10:30:00.000Z"
+    },
+    {
+        "id": 4,
+        "ploggerName": "Elena Rodriguez",
+        "hours": 12.4,
+        "trashVolume": 7,
+        "imgUrl": "/assets/p4.jpg",
+        "pfpSrc": "./assets/plogging_trash_bag_6.jpg",
+        "timeStamp": "2026-02-14T11:00:00.000Z"
+    },
+    {
+        "id": 5,
+        "ploggerName": "Aarav Patel",
+        "hours": 6.8,
+        "trashVolume": 4,
+        "imgUrl": "/assets/p5.jpg",
+        "pfpSrc": "./assets/plogging_trash_bag_6.jpg",
+        "timeStamp": "2026-02-14T11:20:00.000Z"
+    },
+    {
+        "id": 6,
+        "ploggerName": "Jordan Smith",
+        "hours": 4.5,
+        "trashVolume": 1,
+        "imgUrl": "/assets/p6.jpg",
+        "pfpSrc": "./assets/plogging_trash_bag_14.jpg",
+        "timeStamp": "2026-02-14T11:45:00.000Z"
+    },
+    {
+        "id": 7,
+        "ploggerName": "Yuki Tanaka",
+        "hours": 9.2,
+        "trashVolume": 6,
+        "imgUrl": "/assets/p7.jpg",
+        "pfpSrc": "./assets/plogging_trash_bag_4.jpg",
+        "timeStamp": "2026-02-14T12:00:00.000Z"
+    },
+    {
+        "id": 8,
+        "ploggerName": "Chloe Dupont",
+        "hours": 2.5,
+        "trashVolume": 3,
+        "imgUrl": "/assets/p8.jpg",
+        "pfpSrc": "./assets/plogging_trash_bag_4.jpg",
+        "timeStamp": "2026-02-14T12:30:00.000Z"
+    },
+    {
+        "id": 9,
+        "ploggerName": "Liam Wilson",
+        "hours": 11.1,
+        "trashVolume": 8,
+        "imgUrl": "/assets/p9.jpg",
+        "pfpSrc": "./assets/plogging_profile_photo_5.jpg",
+        "timeStamp": "2026-02-14T13:00:00.000Z"
+    },
+    {
+        "id": 10,
+        "ploggerName": "Sofia Rossi",
+        "hours": 7.3,
+        "trashVolume": 4,
+        "imgUrl": "/assets/p10.jpg",
+        "pfpSrc": "./assets/plogging_trash_bag_11.jpg",
+        "timeStamp": "2026-02-14T13:15:00.000Z"
+    },
+    {
+        "id": 11,
+        "ploggerName": "David Muller",
+        "hours": 5.9,
+        "trashVolume": 2,
+        "imgUrl": "/assets/p11.jpg",
+        "pfpSrc": "./assets/plogging_trash_bag_7.jpg",
+        "timeStamp": "2026-02-14T13:40:00.000Z"
+    },
+    {
+        "id": 12,
+        "ploggerName": "Amara Okafor",
+        "hours": 14.2,
+        "trashVolume": 10,
+        "imgUrl": "/assets/p12.jpg",
+        "pfpSrc": "./assets/plogging_profile_photo_2.jpg",
+        "timeStamp": "2026-02-14T14:00:00.000Z"
+    },
+    {
+        "id": 13,
+        "ploggerName": "Lucas Brown",
+        "hours": 3.8,
+        "trashVolume": 2,
+        "imgUrl": "/assets/p13.jpg",
+        "pfpSrc": "./assets/plogging_trash_bag_17.jpg",
+        "timeStamp": "2026-02-14T14:10:00.000Z"
+    },
+    {
+        "id": 14,
+        "ploggerName": "Isabella Garcia",
+        "hours": 6.1,
+        "trashVolume": 3,
+        "imgUrl": "/assets/p14.jpg",
+        "pfpSrc": "./assets/plogging_trash_bag_5.jpg",
+        "timeStamp": "2026-02-14T14:30:00.000Z"
+    },
+    {
+        "id": 15,
+        "ploggerName": "Noah Kim",
+        "hours": 8.0,
+        "trashVolume": 5,
+        "imgUrl": "/assets/p15.jpg",
+        "pfpSrc": "./assets/plogging_profile_photo_5.jpg",
+        "timeStamp": "2026-02-14T14:55:00.000Z"
+    },
+    {
+        "id": 16,
+        "ploggerName": "Emma Wright",
+        "hours": 4.9,
+        "trashVolume": 1,
+        "imgUrl": "/assets/p16.jpg",
+        "pfpSrc": "./assets/plogging_profile_photo_2.jpg",
+        "timeStamp": "2026-02-14T15:10:00.000Z"
+    },
+    {
+        "id": 17,
+        "ploggerName": "Oskar Nielsen",
+        "hours": 10.5,
+        "trashVolume": 7,
+        "imgUrl": "/assets/p17.jpg",
+        "pfpSrc": "./assets/plogging_profile_photo_3.jpg",
+        "timeStamp": "2026-02-14T15:30:00.000Z"
+    },
+    {
+        "id": 18,
+        "ploggerName": "Zara Ahmed",
+        "hours": 2.2,
+        "trashVolume": 2,
+        "imgUrl": "/assets/p18.jpg",
+        "pfpSrc": "./assets/plogging_trash_bag_16.jpg",
+        "timeStamp": "2026-02-14T15:45:00.000Z"
+    },
+    {
+        "id": 19,
+        "ploggerName": "Finn O'Connor",
+        "hours": 7.7,
+        "trashVolume": 4,
+        "imgUrl": "/assets/p19.jpg",
+        "pfpSrc": "./assets/plogging_profile_photo_3.jpg",
+        "timeStamp": "2026-02-14T16:00:00.000Z"
+    },
+    {
+        "id": 20,
+        "ploggerName": "Robin Banks",
+        "hours": 5.5,
+        "trashVolume": 3,
+        "imgUrl": "/assets/p20.jpg",
+        "pfpSrc": "./assets/plogging_profile_photo_4.jpg",
+        "timeStamp": "2026-02-14T16:20:00.000Z"
+    }
 ]

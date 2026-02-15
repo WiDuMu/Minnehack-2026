@@ -21,6 +21,7 @@ export function updateLeaderBoard(cards) {
         
         data.push({
             id: 0,
+            pfpSrc: window.pfpURL,
             ploggerName: nameInput.value,
             trashVolume: userBags,
             hours: userTime / 3600,
@@ -36,7 +37,6 @@ export function updateLeaderBoard(cards) {
     })
 	.catch((e) => {
 		alert("Unable to load leaderboard data");
-        window.location = "https://www.example.com";
         console.error(e);
 	});
 }
@@ -60,6 +60,6 @@ function addLeaderBoardEntry(entry) {
     name.textContent = entry.ploggerName;
     duration.textContent = seconds_to_time(entry.hours * 3600);
     bags.textContent = entry.trashVolume.toFixed(1);
-    pfp.src = "./assets/single brown leaf on a little green background.jpg";
+    pfp.src = entry.pfpSrc;
     leaderboardList.appendChild(neuEntry);
 }
