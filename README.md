@@ -1,1 +1,0 @@
-# Minnehack-2026
