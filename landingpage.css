@@ -9,6 +9,19 @@ body{
     padding: 0;
 }
 /*#94C784, #839958*/
+/*Sofia font*/
+.sofia-regular {
+  font-family: "Sofia", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+/*story font*/
+.story-script-regular {
+  font-family: "Story Script", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 h2{
     text-align: center;
@@ -40,8 +53,14 @@ h2{
 }
 .welcomeBoxText h3{
     margin: 14px 0px 0px 6px;
-    font-size: 1em;
-    font-weight: 600;
+    font-size: 1.5em;
+    font-family: "Sofia", cursive;
+    font-weight: 400;
+    font-style: normal;
+    background: #fbd271;
+    opacity: .80;
+    padding: 5px 10px;
+    border-radius: 16px;
     
 }
 .welcomeBoxText h1{
@@ -52,6 +71,9 @@ h2{
     width: fit-content;
     margin: 0;
     font-size: 5em;
+    font-family: "Story Script", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .welcomeimg{
     flex: 1;
@@ -79,6 +101,8 @@ a:focus{
   text-align: center; 
   font-size: 16px; 
   font-weight: bold;
+  font-family: "Story Script", sans-serif;
+  font-style: normal;
   display: block;
   margin: 20px auto;
   border-radius: 10px;
@@ -187,13 +211,17 @@ a:focus{
     font-size: 1.5em;
     text-align: center;
     width: 100%;
+    font-family: "Story Script", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .answerBox{
     margin:0;
     text-align: left;
     line-height: 1.4;
-    font-size: 1em;
+    font-size: .9em;
+    font-family: "Arial", sans-serif;
 }
 .ploggingPeeps{
     max-height: 200px;
