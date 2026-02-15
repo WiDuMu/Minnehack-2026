@@ -26,6 +26,20 @@ html, body {
     margin-bottom: 1em;
 }
 
+.surface-background {
+    background: var(--surface-container-low);
+}
+
+.space-between {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.width-100 {
+    width: 100%;
+}
+
 /* .pill {
     background: var(--surface);
     margin: 1em;

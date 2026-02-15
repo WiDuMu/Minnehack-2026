@@ -15,7 +15,8 @@
 
 <template id="card_template">
     <article class="border round no-padding">
-        <img class="card_image responsive extra" src="./assets/Plogging_with_Coastal_Striders_-_FUNK9730_(42405061590).jpg">
+        <img class="card_image responsive extra"
+            src="./assets/Plogging_with_Coastal_Striders_-_FUNK9730_(42405061590).jpg">
         <div class="padding">
             <span class="center">
                 <h5 class="card_date">Tuesday, January 1st, 2026</h5>
@@ -34,7 +35,11 @@
 <body>
     <main class="responsive">
         <div id="tab_activity" class="view_tab page padding active">
-            <header class="v-margin-1"><span class="center"><nav class="tabbed"><h5 class="padding">Current activity</h5></nav></span></header>
+            <header class="v-margin-1"><span class="center">
+                    <nav class="tabbed">
+                        <h5 class="padding">Current activity</h5>
+                    </nav>
+                </span></header>
             <dialog id="activity_dialog" class="top">
                 <h5>Top</h5>
                 <div class="field label prefix border">
@@ -92,14 +97,19 @@
             </button>
         </div>
         <div id="tab_leaderboard" class="view_tab page padding">
-            <h5>Leaderboard</h5>
-            <ul class="list border">
-                <li>Item</li>
-                <li>Item</li>
-                <li>Item</li>
-                <li>Item</li>
-            </ul>
-
+            <header class="v-margin-1"><span class="center">
+                    <nav class="tabbed">
+                        <h5 class="padding">Leaderboard</h5>
+                    </nav>
+                </span></header>
+            <article class="border round">
+                <ul class="surface-background list border">
+                    <li class="space-between wdith-100"><span>jimmy profile pic</span><span>Jimmy</span><span>3 bags</span></li>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                </ul>
+            </article>
         </div>
         <div id="tab_group" class="view_tab page padding">
             <h5>Guidelines</h5>
