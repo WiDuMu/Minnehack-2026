@@ -5,10 +5,7 @@ body{
     padding: 0;
 }
 /*#94C784, #839958*/
-h1 {
-    margin-top: 50px;
-    font-size: 5em;
-}
+
 h2{
     text-align: center;
 }
@@ -29,13 +26,28 @@ h2{
 .welcomeBox{
     flex-grow: .35;
     /*background-color: purple;*/
+   
+}
+.welcomeBoxText{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+.welcomeBoxText h3{
+    margin: 14px 0px 0px 6px;
+    font-size: 1em;
+    font-weight: 600;
     
 }
-.welcomeBox h1{
+.welcomeBoxText h1{
     display: inline-block;
     padding: 10px 20px;
-    background: tan;
+    background: #fbd271;
     border-radius: 16px;
+    width: fit-content;
+    margin: 0;
+    font-size: 5em;
 }
 .welcomeimg{
     flex: 1;
@@ -44,7 +56,7 @@ h2{
     justify-content: flex-start;
     align-items: center;
     padding: 12px;
-    background: tan;
+    background: #fbd271;
     border-radius: 16px;
 }
 
