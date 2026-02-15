@@ -4,9 +4,9 @@
 
 ## what is Plogging?
 
-JOGGING + PICKING UP LITTER AND TRASH
+Jogging + Picking up litter and trash
 
-PLOGGING COMES FROM THE SWEDISH TERM “PLOGGA”. 
+Plogging comes from the swedish term "plogga".
 Stockholm, Sweden was the first city to host a “Plogga” in 2016. This event combined a jogging with picking up litter. "Plogga" is an activity where you picking up trash while jogging. It also reffers to running, biking, skatboarding, hiking,  or other. Plogging is a change of attitude and ploggers are proud garbage collectors who can do something for the environment and health.
 
 Plogging is a community-driven web platform that encourages users to pick up trash while walking, running, or hiking. Where fitness and environmentalism can go hand-in-hand.
