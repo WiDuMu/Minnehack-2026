@@ -17,7 +17,7 @@ It comes from the combination of two swedish words Plocka = "pick up" and Jogga 
 # example of joggers picking up trash
 <img src="assets/Plogging_with_Coastal_Striders_-_FUNK9730_(42405061590).jpg" width="700"/>
 
-# example of trash that can be picked up from PLogging
+# example of trash that can be picked up from Plogging
 <img src="assets/1h_plogging_in_Savedalen_VastraGotaland_Sweden_May29_2020.jpg" width="700"/>
 
 <img src="assets/1h_suburban_plogging_Frantorp_VastraGotaland_Sweden_May31_2020.jpg" width="700"/>
