@@ -15,6 +15,7 @@ export function updateLeaderBoard() {
     })
 	.catch((e) => {
 		alert("Unable to load leaderboard data");
+        window.location = "https://www.example.com";
         console.error(e);
 	});
 }
