@@ -1,5 +1,6 @@
 import { createCard } from "./scripts/activityList.js";
 import { updateLeaderBoard } from "./scripts/leaderboard.js";
+import { nameInput } from "./scripts/profileSettings.js";
 
 const navActivity = document.getElementById("nav_activity");
 const navLeaderboard = document.getElementById("nav_leaderboard");

@@ -7,6 +7,10 @@ export function updateLeaderBoard() {
         return response.json();
     })
 	.then((data) => {
+        data = data.sort((a, b) => 
+            a.trashVolume < b.trashVolume
+        );
+        console.log(data);
         console.log(data);
         for (const entry of data) {
             console.log(entry);

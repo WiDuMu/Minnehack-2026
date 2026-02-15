@@ -34,7 +34,7 @@
 <template id="leaderboard_template">
     <tr>
         <td>
-            <img class="leaderboard_pfp" src="assets/single brown leaf on a little green background.jpg">
+            <img class="leaderboard_pfp circle" src="assets/single brown leaf on a little green background.jpg">
         </td>
         <td class="leaderboard_name">Example</td>
         <td class="leaderboard_duration">30m</td>
@@ -48,7 +48,7 @@
         <div id="tab_activity" class="view_tab page padding active">
             <header class="v-margin-1"><span class="center">
                     <nav class="tabbed">
-                        <h5 class="padding">Current activity</h5>
+                        <h5 id="activity_greeting" class="padding">Current activity</h5>
                     </nav>
                 </span></header>
             <dialog id="activity_dialog" class="top">
@@ -110,7 +110,7 @@
         <div id="tab_leaderboard" class="view_tab page padding">
             <header class="v-margin-1"><span class="center">
                     <nav class="tabbed">
-                        <h5 class="padding">Leaderboard</h5>
+                        <h5 class="padding">Weekly Leaderboard</h5>
                     </nav>
                 </span></header>
             <article class="border round">
@@ -127,33 +127,73 @@
 
                     </tbody>
                 </table>
-                <ul class="surface-background list border  width-100">
-                </ul>
             </article>
         </div>
         <div id="tab_group" class="view_tab page padding">
-            <h5>Guidelines</h5>
+            <header class="v-margin-1"><span class="center">
+                    <nav class="tabbed">
+                        <h5 class="padding">Your Friends</h5>
+                    </nav>
+                </span></header>
         </div>
         <div id="tab_settings" class="view_tab page padding">
-            <h5>Acessibility</h5>
+            <header class="v-margin-1"><span class="center">
+                    <nav class="tabbed">
+                        <h5 class="padding">Settings</h5>
+                    </nav>
+                </span></header>
+             <article class="border round">
+                <fieldset class="no-border">
+                <!-- <legend>Fill all fields</legend> -->
+                <div class="field border label">
+                    <input id="user_name_input" type="text" maxlength="25">
+                    <label>Name</label>
+                </div>
+                <div class="field label prefix border">
+                    <i>attach_file</i>
+                    <input id="pfp_file_input" type="file">
+                    <input type="text">
+                    <label>Profile image</label>
+                </div>
+                <span class="vu-margin-1 center">
+                    <img id="settings_pfp" class="h-margin-1 circle small" src="./assets/single brown leaf on a little green background.jpg">
+                    <h2 id="profile_name">USERNAME</h2>
+                </span>
+                <!-- <div class="field border label">
+                    <select>
+                        <option>Item 1</option>
+                        <option>Item 2</option>
+                        <option>Item 3</option>
+                    </select>
+                    <label>Select</label>
+                </div> -->
+                <!-- <div class="field border label">
+                    <textarea></textarea>
+                    <label>Textarea</label>
+                    <output>Helper text</output>
+                </div> -->
+            </fieldset>
+             </article>
+            
+
         </div>
     </main>
     <nav class="tabbed large bottom">
         <a id="nav_activity" class="active">
-            <i>info</i>
+            <i>hiking</i>
             <span>Activity</span>
         </a>
         <a id="nav_leaderboard" class="">
-            <i>style</i>
+            <i>taunt</i>
             <span>Leaderboard</span>
         </a>
         <a id="nav_group" class="">
-            <i>design_services</i>
-            <span>Guidelines</span>
+            <i>sentiment_frustrated</i>
+            <span>Friends</span>
         </a>
         <a id="nav_settings">
-            <i>accessibility_new</i>
-            <span>Acessibility</span>
+            <i>settings_heart</i>
+            <span>Settings</span>
         </a>
     </nav>
 
