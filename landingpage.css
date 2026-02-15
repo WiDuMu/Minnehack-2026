@@ -110,7 +110,7 @@ h2{
 .textDiv1-1{
     flex: 1; 
     display: flex;
-    background-color: pink;
+    background-color: #C3C88C;
     border-radius: 60% / 45%;
     padding: 24px 30px;
     min-height: 200px;
@@ -132,7 +132,7 @@ h2{
 .textDiv2-2{
     flex: 1;
     display: flex;
-    background-color: pink;
+    background-color: #C3C88C;
     border-radius: 60% / 45%;
     padding: 24px 30px;
     min-height: 200px;
@@ -144,7 +144,7 @@ h2{
 .textDiv3-1{
     flex: 1; 
     display: flex;
-    background-color: pink;
+    background-color: #C3C88C;
     border-radius: 60% / 45%;
     padding: 24px 30px;
     min-height: 200px;
@@ -171,4 +171,8 @@ h2{
     text-align: left;
     line-height: 1.4;
     font-size: 1em;
+}
+.ploggingPeeps{
+    max-height: 200px;
+    opacity: .80;
 }
