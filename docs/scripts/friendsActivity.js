@@ -1,5 +1,26 @@
 const friendsActivityList = document.getElementById("friends_activity_list");
 const freindTemplate = document.getElementById("friend_template");
+const groupHeading = document.getElementById("group_heading");
+
+/**
+ * Returns the given time in seconds
+ * @param {string} time 
+ * @returns {number}
+ */
+function time_to_seconds(time) {
+    const hs = time.split(":");
+    return (parseInt(hs[0]) * 3600) + (parseInt(hs[1] * 60));
+}
+
+/**
+ * Returns the seconds in time
+ * @param {number} seconds 
+ * @returns {string}
+ */
+function seconds_to_time(seconds) {
+    return `${Math.floor(seconds / 3600)}:${Math.floor((seconds % 3600) / 60)}`;
+}
+
 export function updateFriends() {
     const friendsData = fetch("./data/friends.json")
     .then((response) => {
@@ -8,14 +29,19 @@ export function updateFriends() {
     })
     .then((data) => {
         console.log(data);
+        let totalTime = 0;
+        let totalBags = 0;
+        friendsActivityList.replaceChildren();
         for (const entry of data) {
-            console.log(entry);
+            totalTime += time_to_seconds(entry.weeklyTime);
+            totalBags += entry.weeklyBags;
             addFriendActivity(entry);
         }
+        groupHeading.textContent = `This week you and your friends spent ${seconds_to_time(totalTime)}, and cleaned up ${totalBags} bags!`;
+        console.log(totalTime, totalBags)
     })
     .catch((e) => {
         alert("Unable to load leaderboard data");
-        window.location = "https://www.example.com";
         console.error(e);
     });
 }
