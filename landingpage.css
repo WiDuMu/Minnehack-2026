@@ -1,23 +1,30 @@
 body{
     background: linear-gradient(#80B9b1, #0f4e77 ) ;
     min-height: 10%;
+    margin: 0;
+    padding: 0;
 }
 /*#94C784, #839958*/
 h1 {
     margin-top: 50px;
     font-size: 5em;
 }
-p{
-    text-align: right;
+h2{
+    text-align: center;
 }
-.ploggingPeopleImg{
-    max-width: 100%;
-    align-items: left;
-    
-}
+
+
 .welcomeContain{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px;
    /* background:  #80B9b1;*/
+}
+.ploggingPeopleImg{
+    max-width: 85%;
+    height: auto;
+    display: block;
 }
 .welcomeBox{
     flex-grow: .35;
@@ -28,17 +35,11 @@ p{
     flex: 1;
     /*background-color: orange;*/
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
-.questionBox{
-    display: flex;
-    justify-content: left;
-    align-content: left ;
-    margin: 2px 20px;
-    font-size: 2em;
-}
+
 .myButton {
   background-color: #fbd271;
   /* #e7bd8b*/
@@ -54,13 +55,13 @@ p{
   
   
 }
-.testCircle{
+/*.testCircle{
     width: 200px;
     height:200px;
     border-radius: 50%;
     background-color: (148,199,180);
 
-}
+}*/
 
 .myButton:hover {
   background-color: #4D9078; /* Darker green on hover */
@@ -69,39 +70,83 @@ p{
 
 .firstTextContainer{
  display: flex;
- height: 200px;
+ align-items: center;
+ margin: 30px 60px;
 }
 .secondTextContainer{
  display: flex;
- height: 200px;
+ align-items: center;
+ margin: 30px 60px;
 }
 .thirdTextContainer{
  display: flex;
- height: 200px;
+ align-items: center;
+ margin: 30px 60px;
 }
-.answerBox{
-    text-align: left;
-}
+
 
 .textDiv1-1{
     flex: 1; 
-    width: 250px;
-    height:200px;
-    border-radius: 75%;
-    background-color: pink
+    display: flex;
+    background-color: pink;
+    border-radius: 60% / 45%;
+    padding: 24px 30px;
+    min-height: 200px;
+    height:auto;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 20px;
+
 }
 .textDiv1-2{
-    flex: 2;
+    flex: 1;
+    margin-left: 20px;
+    
 }
 .textDiv2-1{
-    flex: 1; 
+    flex: 1;
+    margin-left: 20px; 
 }
 .textDiv2-2{
-    flex: 2;
+    flex: 1;
+    display: flex;
+    background-color: pink;
+    border-radius: 60% / 45%;
+    padding: 24px 30px;
+    min-height: 200px;
+    height:auto;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 20px;
 }
 .textDiv3-1{
-    flex: 1;
+    flex: 1; 
+    display: flex;
+    background-color: pink;
+    border-radius: 60% / 45%;
+    padding: 24px 30px;
+    min-height: 200px;
+    height:auto;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 20px;
 }
 .textDiv3-2{
-    flex:2;
+    flex:1;
+    margin-left: 20px;
+}
+
+.questionBox{
+    display: block;
+    margin: 0px 0px 10px 0px;
+    font-size: 1.5em;
+    text-align: center;
+    width: 100%;
+}
+
+.answerBox{
+    margin:0;
+    text-align: left;
+    line-height: 1.4;
+    font-size: 1em;
 }
