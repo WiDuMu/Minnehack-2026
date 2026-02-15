@@ -118,17 +118,26 @@ h2{
     flex-direction: column;
     justify-content: center;
     margin-right: 20px;
+    max-width: 600px;
 
 }
 .textDiv1-2{
-    flex: 1;
-    margin-left: 20px;
+    flex: 1; 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 40px;
+}
     
-}
+
 .textDiv2-1{
-    flex: 1;
-    margin-left: 20px; 
+    flex: 1; 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-right: 40px;
 }
+
 .textDiv2-2{
     flex: 1;
     display: flex;
@@ -140,6 +149,7 @@ h2{
     flex-direction: column;
     justify-content: center;
     margin-right: 20px;
+    max-width: 600px;
 }
 .textDiv3-1{
     flex: 1; 
@@ -152,10 +162,14 @@ h2{
     flex-direction: column;
     justify-content: center;
     margin-right: 20px;
+    max-width: 600px;
 }
 .textDiv3-2{
-    flex:1;
-    margin-left: 20px;
+    flex: 1; 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 40px;
 }
 
 .questionBox{
@@ -174,5 +188,6 @@ h2{
 }
 .ploggingPeeps{
     max-height: 200px;
-    opacity: .80;
+    height: auto;
+    width: 320px;
 }
