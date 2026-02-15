@@ -31,6 +31,15 @@
     </article>
 </template>
 
+<template id="leaderboard_template">
+    <li class="space-between">
+        <img class="leaderboard_pfp" src="assets/single brown leaf on a little green background.jpg">
+        <span class="leaderboard_name">Jimmy</span>
+        <span class="leaderboard_duration">30 minutes</span>
+        <span class="leaderboard_bags">3 bags</span>
+    </li>
+</template>
+
 
 <body>
     <main class="responsive">
@@ -103,11 +112,7 @@
                     </nav>
                 </span></header>
             <article class="border round">
-                <ul class="surface-background list border">
-                    <li class="space-between wdith-100"><span>jimmy profile pic</span><span>Jimmy</span><span>3 bags</span></li>
-                    <li>Item</li>
-                    <li>Item</li>
-                    <li>Item</li>
+                <ul id="leaderboard_list" class="surface-background list border  width-100">
                 </ul>
             </article>
         </div>
