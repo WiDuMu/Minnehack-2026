@@ -14,5 +14,13 @@
         "recentBags": 1.5,
         "weeklyTime": "1:32",
         "weeklyBags": 4.0
+    },
+    {
+        "name": "Marathon Plogger",
+        "imgSrc": "./assets/Plogging_with_Coastal_Striders_-_FUNK9730_(42405061590).jpg",
+        "recentTime": "23:56",
+        "recentBags": 42.0,
+        "weeklyTime": "73:43",
+        "weeklyBags": 69.0
     }
 ]
