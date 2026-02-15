@@ -4,7 +4,9 @@ const activityGreeting = document.getElementById("activity_greeting");
 const profileName = document.getElementById("profile_name");
 const settingsPFP = document.getElementById("settings_pfp");
 
-let pfpURL = "";
+pfpInput.value = "";
+
+let pfpURL = "./assets/single brown leaf on a little green background.jpg";
 window.pfpURL = pfpURL;
 
 nameInput.addEventListener("input", () => {

@@ -48,6 +48,7 @@ export function updateFriends(cards) {
             console.log(cards);
             const activity = {
                 name: nameInput.value,
+                pfpSrc: window.pfpURL,
                 imgSrc: cards[cards.length - 1].image,
                 recentTime: seconds_to_time(cards[cards.length - 1].duration),
                 recentBags: cards[cards.length -1].bags,
@@ -71,8 +72,10 @@ export function updateFriends(cards) {
 
 
 export function addFriendActivity(friend) {
+    console.log(friend);
     const neuEntry = freindTemplate.content.cloneNode(true);
     const name = neuEntry.querySelector(".name");
+    const friendPfp = neuEntry.querySelector(".friend_pfp");
     const recentTime = neuEntry.querySelector(".recent_time");
     const recentBags = neuEntry.querySelector(".recent_bags");
     const weeklyTime = neuEntry.querySelector(".weekly_time");
@@ -80,6 +83,7 @@ export function addFriendActivity(friend) {
     const activityImage = neuEntry.querySelector(".friend_activity_image");
 
     name.textContent = friend.name;
+    friendPfp.src = friend.pfpSrc;
     recentTime.textContent = friend.recentTime;
     recentBags.textContent = friend.recentBags;
     weeklyTime.textContent = friend.weeklyTime;
