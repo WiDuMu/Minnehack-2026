@@ -5,6 +5,7 @@ const profileName = document.getElementById("profile_name");
 const settingsPFP = document.getElementById("settings_pfp");
 
 let pfpURL = "";
+window.pfpURL = pfpURL;
 
 nameInput.addEventListener("input", () => {
     activityGreeting.textContent = `Activity for ${nameInput.value}`;
@@ -17,6 +18,7 @@ pfpInput.addEventListener("change", () => {
     }
     pfpURL = URL.createObjectURL(pfpInput.files[0]);
     settingsPFP.src = pfpURL;
+    window.pfpURL = pfpURL;
 });
 
 

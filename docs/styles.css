@@ -67,6 +67,11 @@ li.space-between {
     justify-content: center;
 }
 
+.v-center {
+    display: flex;
+    align-items: center;
+}
+
 .clock {
     font-family: "Kode Mono", "Roboto", sans-serif;
 }
@@ -83,7 +88,7 @@ li.space-between {
     width: 100%;
 }
 
-#tab_activity {
+#tab_activity {}
     
 
 .cards_list {

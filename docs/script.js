@@ -1,7 +1,7 @@
-import { createCard } from "./scripts/activityList.js";
+import { addCard, createCard , getCards} from "./scripts/activityList.js";
 import { updateLeaderBoard } from "./scripts/leaderboard.js";
 import { nameInput } from "./scripts/profileSettings.js";
-import { addFriendActivity, updateFriends } from "./scripts/friendsActivity.js";
+import { addFriendActivity, time_to_seconds, updateFriends } from "./scripts/friendsActivity.js";
 
 const navActivity = document.getElementById("nav_activity");
 const navLeaderboard = document.getElementById("nav_leaderboard");
@@ -33,11 +33,17 @@ openActivityDialog.addEventListener("click", () => {
 
 submitActivityDialog.addEventListener("click", () => {
     const imageURL = URL.createObjectURL(activityFileInput.files[0]);
-    const startTime = new Date(activityStartTimeInput.value);
-    const endTime = new Date(activityEndTimeInput.value);
-    const duration = endTime - startTime;
+    const startTime = time_to_seconds(activityStartTimeInput.value);
+    const endTime = time_to_seconds(activityEndTimeInput.value);
+    const duration = Math.abs(endTime - startTime);
     const bags = new Number(activityBagsInput.value);
-    createCard(imageURL, new Date(Date.now()), duration, bags);
+    const card = {
+        image: imageURL,
+        date:  new Date(Date.now()),
+        duration: duration,
+        bags: bags
+    }
+    addCard(card);
     console.log(activityFileInput.files);
     console.log(activityStartTimeInput.value, startTime);
     console.log(activityEndTimeInput.value, endTime);
@@ -66,7 +72,7 @@ navLeaderboard.addEventListener("click", () => {
     tabLeaderboard.classList.add("active");
     currentNav = navLeaderboard;
     currentTab = tabLeaderboard;
-    updateLeaderBoard();
+    updateLeaderBoard(getCards());
 });
 
 navGroup.addEventListener("click", () => {
@@ -76,7 +82,7 @@ navGroup.addEventListener("click", () => {
     tabGroup.classList.add("active");
     currentNav = navGroup;
     currentTab = tabGroup;
-    updateFriends();
+    updateFriends(getCards());
 });
 
 navSettings.addEventListener("click", () => {

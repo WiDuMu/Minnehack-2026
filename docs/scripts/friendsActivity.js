@@ -1,15 +1,16 @@
 const friendsActivityList = document.getElementById("friends_activity_list");
 const freindTemplate = document.getElementById("friend_template");
 const groupHeading = document.getElementById("group_heading");
+import { nameInput } from "./profileSettings.js";
 
 /**
  * Returns the given time in seconds
  * @param {string} time 
  * @returns {number}
  */
-function time_to_seconds(time) {
+export function time_to_seconds(time) {
     const hs = time.split(":");
-    return (parseInt(hs[0]) * 3600) + (parseInt(hs[1] * 60));
+    return (parseInt(hs[0], 10) * 3600) + (parseInt(hs[1], 10) * 60);
 }
 
 /**
@@ -17,11 +18,14 @@ function time_to_seconds(time) {
  * @param {number} seconds 
  * @returns {string}
  */
-function seconds_to_time(seconds) {
+export function seconds_to_time(seconds) {
+    if (seconds <= 0) {
+        seconds = 0;
+    }
     return `${Math.floor(seconds / 3600)}:${Math.floor((seconds % 3600) / 60)}`;
 }
 
-export function updateFriends() {
+export function updateFriends(cards) {
     const friendsData = fetch("./data/friends.json")
     .then((response) => {
         console.log(response);
@@ -31,14 +35,33 @@ export function updateFriends() {
         console.log(data);
         let totalTime = 0;
         let totalBags = 0;
+        let userWeeklyTime = 0;
+        let userWeeklyBags = 0;
+        for (const card of cards) {
+            totalTime += card.duration;
+            userWeeklyTime += card.duration;
+            totalBags += card.bags;
+            userWeeklyBags += card.bags;
+        }
         friendsActivityList.replaceChildren();
+        if (cards.length > 0) {
+            console.log(cards);
+            const activity = {
+                name: nameInput.value,
+                imgSrc: cards[cards.length - 1].image,
+                recentTime: seconds_to_time(cards[cards.length - 1].duration),
+                recentBags: cards[cards.length -1].bags,
+                weeklyTime: seconds_to_time(userWeeklyTime),
+                weeklyBags: userWeeklyBags,
+            };
+            addFriendActivity(activity);
+        }
         for (const entry of data) {
             totalTime += time_to_seconds(entry.weeklyTime);
             totalBags += entry.weeklyBags;
             addFriendActivity(entry);
         }
         groupHeading.textContent = `This week you and your friends spent ${seconds_to_time(totalTime)}, and cleaned up ${totalBags} bags!`;
-        console.log(totalTime, totalBags)
     })
     .catch((e) => {
         alert("Unable to load leaderboard data");

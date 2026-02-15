@@ -1,5 +1,24 @@
+import { seconds_to_time, time_to_seconds } from "./friendsActivity.js";
 const cardsList = document.querySelector(".cards_list");
 const cardTemplate = document.getElementById("card_template");
+
+const cards = [];
+
+export function getCards() {
+    return cards;
+}
+
+export function renderCards() {
+    cardsList.replaceChildren();
+    for (const card of cards) {
+        createCard(card.image, card.date, card.duration, card.bags);
+    }
+}
+
+export function addCard(card) {
+    cards.push(card);
+    renderCards();
+}
 
 /**
  * Creates a new card in the list
@@ -15,15 +34,12 @@ export function createCard(image, date, duration, bags) {
     const cardClock = neuCard.querySelector(".card_clock");
     const cardBags = neuCard.querySelector(".card_bags");
 
-    let bagsRounded = bags.toFixed(2);
+    const bagsRounded = bags.toFixed(2);
     
     cardImage.src = image;
     cardDate.textContent = date.toLocaleDateString();
-    cardClock.textContent = duration;
+    cardClock.textContent = seconds_to_time(duration);
     cardBags.textContent = `${bagsRounded} bags`;
-
-
-
 
     cardsList.appendChild(neuCard);
 }

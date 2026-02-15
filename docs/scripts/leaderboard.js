@@ -1,19 +1,36 @@
+import { seconds_to_time } from "./friendsActivity.js";
+import { nameInput,  } from "./profileSettings.js";
 const leaderboardTemplate = document.querySelector("#leaderboard_template");
 const leaderboardList = document.getElementById("leaderboard_list");
-export function updateLeaderBoard() {
+export function updateLeaderBoard(cards) {
+    console.log("cards: ", cards);
     const leaderBoardData = fetch("./data/leaderboard.json")
 	.then((response) => {
         console.log(response);
         return response.json();
     })
 	.then((data) => {
+        let userTime = 0;
+        let userBags = 0;
+        for (const card of cards) {
+            console.log(card, userTime, userBags);
+            userTime += card.duration;
+            userBags += card.bags;
+            console.log(card, userTime, userBags);
+        }
+        
+        data.push({
+            id: 0,
+            ploggerName: nameInput.value,
+            trashVolume: userBags,
+            hours: userTime / 3600,
+        })
+        leaderboardList.replaceChildren();
         data = data.sort((a, b) => 
             a.trashVolume < b.trashVolume
         );
         console.log(data);
-        console.log(data);
         for (const entry of data) {
-            console.log(entry);
             addLeaderBoardEntry(entry);
         }
     })
@@ -41,8 +58,8 @@ function addLeaderBoardEntry(entry) {
     const pfp = neuEntry.querySelector(".leaderboard_pfp");
 
     name.textContent = entry.ploggerName;
-    duration.textContent = entry.impactKm;
-    bags.textContent = entry.trashVolume;
+    duration.textContent = seconds_to_time(entry.hours * 3600);
+    bags.textContent = entry.trashVolume.toFixed(1);
     pfp.src = "./assets/single brown leaf on a little green background.jpg";
     leaderboardList.appendChild(neuEntry);
 }
