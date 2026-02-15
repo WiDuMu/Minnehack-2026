@@ -1,6 +1,7 @@
 import { createCard } from "./scripts/activityList.js";
 import { updateLeaderBoard } from "./scripts/leaderboard.js";
 import { nameInput } from "./scripts/profileSettings.js";
+import { addFriendActivity, updateFriends } from "./scripts/friendsActivity.js";
 
 const navActivity = document.getElementById("nav_activity");
 const navLeaderboard = document.getElementById("nav_leaderboard");
@@ -75,6 +76,7 @@ navGroup.addEventListener("click", () => {
     tabGroup.classList.add("active");
     currentNav = navGroup;
     currentTab = tabGroup;
+    updateFriends();
 });
 
 navSettings.addEventListener("click", () => {

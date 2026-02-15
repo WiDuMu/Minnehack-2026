@@ -42,6 +42,41 @@
     </tr>
 </template>
 
+<template id="friend_template">
+    <article class="no-padding">
+        <div class="grid no-space">
+            <div class="s6">
+                <img class="responsive large friend_activity_image"
+                    src="./assets/Plogging_with_Coastal_Striders_-_FUNK9730_(42405061590).jpg">
+            </div>
+            <div class="s6 padding">
+                <span class="width-100">
+                    <h2 class="center name">Timothy</h2>
+                </span>
+                <table>
+                    <thead>
+                        <th>&nbsp;</th>
+                        <th>Time</th>
+                        <th>Bags</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Most Recently</td>
+                            <td class="recent_time">00:10</td>
+                            <td class="recent_bags">2.0</td>
+                        </tr>
+                        <tr>
+                            <td>This Week</td>
+                            <td class="weekly_time">69:42</td>
+                            <td class="weekly_bags">1337</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </article>
+</template>
+
 
 <body>
     <main class="responsive">
@@ -135,6 +170,42 @@
                         <h5 class="padding">Your Friends</h5>
                     </nav>
                 </span></header>
+            <div id="friends_activity_list">
+
+            </div>
+            <article class="no-padding">
+                <div class="grid no-space">
+                    <div class="s6">
+                        <img class="responsive large"
+                            src="./assets/Plogging_with_Coastal_Striders_-_FUNK9730_(42405061590).jpg">
+                    </div>
+                    <div class="s6 padding">
+                        <span class="width-100">
+                            <h2 class="center">Timothy</h2>
+                        </span>
+                        <table>
+                            <thead>
+                                <th>&nbsp;</th>
+                                <th>Time</th>
+                                <th>Bags</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Most Recently</td>
+                                    <td>00:10</td>
+                                    <td>2.0</td>
+                                </tr>
+                                <tr>
+                                    <td>This Week</td>
+                                    <td>69:42</td>
+                                    <td>1337</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </article>
+
         </div>
         <div id="tab_settings" class="view_tab page padding">
             <header class="v-margin-1"><span class="center">
@@ -142,24 +213,25 @@
                         <h5 class="padding">Settings</h5>
                     </nav>
                 </span></header>
-             <article class="border round">
+            <article class="border round">
                 <fieldset class="no-border">
-                <!-- <legend>Fill all fields</legend> -->
-                <div class="field border label">
-                    <input id="user_name_input" type="text" maxlength="25">
-                    <label>Name</label>
-                </div>
-                <div class="field label prefix border">
-                    <i>attach_file</i>
-                    <input id="pfp_file_input" type="file">
-                    <input type="text">
-                    <label>Profile image</label>
-                </div>
-                <span class="vu-margin-1 center">
-                    <img id="settings_pfp" class="h-margin-1 circle small" src="./assets/single brown leaf on a little green background.jpg">
-                    <h2 id="profile_name">USERNAME</h2>
-                </span>
-                <!-- <div class="field border label">
+                    <!-- <legend>Fill all fields</legend> -->
+                    <div class="field border label">
+                        <input id="user_name_input" type="text" maxlength="25">
+                        <label>Name</label>
+                    </div>
+                    <div class="field label prefix border">
+                        <i>attach_file</i>
+                        <input id="pfp_file_input" type="file">
+                        <input type="text">
+                        <label>Profile image</label>
+                    </div>
+                    <span class="vu-margin-1 center">
+                        <img id="settings_pfp" class="h-margin-1 circle small"
+                            src="./assets/single brown leaf on a little green background.jpg">
+                        <h2 id="profile_name">USERNAME</h2>
+                    </span>
+                    <!-- <div class="field border label">
                     <select>
                         <option>Item 1</option>
                         <option>Item 2</option>
@@ -167,14 +239,13 @@
                     </select>
                     <label>Select</label>
                 </div> -->
-                <!-- <div class="field border label">
+                    <!-- <div class="field border label">
                     <textarea></textarea>
                     <label>Textarea</label>
                     <output>Helper text</output>
                 </div> -->
-            </fieldset>
-             </article>
-            
+                </fieldset>
+            </article>
 
         </div>
     </main>

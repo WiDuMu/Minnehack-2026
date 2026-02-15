@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Ursula",
+        "imgSrc": "./assets/1h_plogging_in_Savedalen_VastraGotaland_Sweden_May29_2020.jpg",
+        "recentTime": "00:20",
+        "recentBags": 2.0,
+        "weeklyTime": "3:40",
+        "weeklyBags": 4.5
+    },
+    {
+        "name": "Vicky",
+        "imgSrc": "./assets/1h_suburban_plogging_Frantorp_VastraGotaland_Sweden_May31_2020.jpg",
+        "recentTime": "00:46",
+        "recentBags": 1.5,
+        "weeklyTime": "1:32",
+        "weeklyBags": 4.0
+    }
+]
