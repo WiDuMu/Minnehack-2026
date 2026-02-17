@@ -25,7 +25,9 @@ It comes from the combination of two swedish words Plocka = "pick up" and Jogga 
 <img src="./docs/assets/1h_suburban_plogging_Frantorp_VastraGotaland_Sweden_May31_2020.jpg" width="700"/>
 
 
-# How to run code locally
+# Website
+
+URL: https://widumu.github.io/Minnehack-2026/
 
 
 
