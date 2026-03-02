@@ -1,0 +1,230 @@
+html{
+    overscroll-behavior: none;
+}
+
+body{
+    background: linear-gradient(#80B9b1, #0f4e77 ) ;
+    min-height: 10%;
+    margin: 0;
+    padding: 0;
+}
+/*#94C784, #839958*/
+/*Sofia font*/
+.sofia-regular {
+  font-family: "Sofia", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+/*story font*/
+.story-script-regular {
+  font-family: "Story Script", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+h2{
+    text-align: center;
+}
+
+
+.welcomeContain{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px;
+   /* background:  #80B9b1;*/
+}
+.ploggingPeopleImg{
+    max-width: 95%;
+    height: auto;
+    border-radius: 14px;
+}
+.welcomeBox{
+    flex-grow: .35;
+    /*background-color: purple;*/
+   
+}
+.welcomeBoxText{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+.welcomeBoxText h3{
+    margin: 14px 0px 0px 6px;
+    font-size: 1.5em;
+    font-family: "Sofia", cursive;
+    font-weight: 400;
+    font-style: normal;
+    background: #fbd271;
+    opacity: .80;
+    padding: 5px 10px;
+    border-radius: 16px;
+    
+}
+.welcomeBoxText h1{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fbd271;
+    border-radius: 16px;
+    width: fit-content;
+    margin: 0;
+    font-size: 5em;
+    font-family: "Story Script", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.welcomeimg{
+    flex: 1;
+    /*background-color: orange;*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 12px;
+    background: #fbd271;
+    border-radius: 16px;
+}
+/* attempted to remove the blue highlight from anchor tag... didnt work
+a:focus{
+ outline: none; 
+ border: 2px solid #30253e;  
+ box-shadow: 0 0 0 2px #30253e;
+}
+*/
+.myButton {
+  background-color: #fbd271;
+  /* #e7bd8b*/
+  border: none;
+  color: black; 
+  padding: 16px 64px;
+  text-align: center; 
+  font-size: 16px; 
+  font-weight: bold;
+  font-family: "Story Script", sans-serif;
+  font-style: normal;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+
+  cursor: pointer; 
+
+}
+/*.testCircle{
+    width: 200px;
+    height:200px;
+    border-radius: 50%;
+    background-color: (148,199,180);
+
+}*/
+
+.myButton:hover {
+  background-color: #4D9078; /* Darker green on hover */
+  color: orange;
+}
+
+.firstTextContainer{
+ display: flex;
+ align-items: center;
+ margin: 30px 60px;
+}
+.secondTextContainer{
+ display: flex;
+ align-items: center;
+ margin: 30px 60px;
+}
+.thirdTextContainer{
+ display: flex;
+ align-items: center;
+ margin: 30px 60px;
+}
+
+
+.textDiv1-1{
+    flex: 1; 
+    display: flex;
+    background-color: #C3C88C;
+    border-radius: 60% / 45%;
+    padding: 24px 30px;
+    min-height: 200px;
+    height:auto;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 20px;
+    max-width: 600px;
+
+}
+.textDiv1-2{
+    flex: 1; 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 40px;
+}
+    
+
+.textDiv2-1{
+    flex: 1; 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-right: 40px;
+}
+
+.textDiv2-2{
+    flex: 1;
+    display: flex;
+    background-color: #C3C88C;
+    border-radius: 60% / 45%;
+    padding: 24px 30px;
+    min-height: 200px;
+    height:auto;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 20px;
+    max-width: 600px;
+}
+.textDiv3-1{
+    flex: 1; 
+    display: flex;
+    background-color: #C3C88C;
+    border-radius: 60% / 45%;
+    padding: 24px 30px;
+    min-height: 200px;
+    height:auto;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 20px;
+    max-width: 600px;
+}
+.textDiv3-2{
+    flex: 1; 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 40px;
+}
+
+.questionBox{
+    display: block;
+    margin: 0px 0px 10px 0px;
+    font-size: 1.5em;
+    text-align: center;
+    width: 100%;
+    font-family: "Story Script", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.answerBox{
+    margin:0;
+    text-align: left;
+    line-height: 1.4;
+    font-size: .9em;
+    font-family: "Arial", sans-serif;
+}
+.ploggingPeeps{
+    max-height: 200px;
+    height: auto;
+    width: 320px;
+}

@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap');
+
+@keyframes shifting {
+   0% {
+      background-position: 0% 0%;
+   }
+
+   50% {
+      background-position: 100% 75%;
+   }
+
+   100% {
+      background-position: 0% 0%;
+   }
+}
+
+#bg_buttons > a > img {
+    height: 100px;
+    aspect-ratio: 1;
+}
+
+.bg-1 {
+    background-image:  url("./assets/3-maple-leaves.png");
+}
+.bg-2 {
+    background-image:  url("./assets/8bit_leaves.png");
+}
+.bg-3 {
+    background-image:  url("./assets/basic_8_bit_background.png");
+}
+
+.bg-5 {
+    background-image:  url("./assets/trash_bags_infinite.png");
+}
+.bg-6 {
+    background-image:  url("./assets/shamrock green.png");
+}
+.bg-7 {
+    background-image:  url("./assets/3-large-leaves.png");
+}
+.bg-8 {
+    background-image:  url("./assets/16-fall-leaves.png");
+}
+
+
+.bg-guy {
+    background-image: url("./assets/plogging_profile_photo_1.jpg");
+}
+
+/*
+./assets/3-maple-leaves.png
+./assets/8bit_leaves.png
+./assets/basic_8_bit_background.png
+./assets/8bit-trash-pattern.png
+./assets/trash_bags_infinite.png
+./assets/shamrock green.png
+./assets/3-large-leaves.png
+./assets/16-fall-leaves
+./assets/brown-leaf.png
+./assets/plogging_profile_photo_1.jpg
+*/
+
+html, body {
+    /* max-height: 100vh; */
+    max-width: 100vw;
+    background-size: 100px;
+    animation: shifting 900s linear infinite;
+}
+
+.vu-margin-1 {
+    margin-top: 1em;
+}
+
+.h-margin-1 {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.v-margin-1 {
+    margin-bottom: 1em;
+}
+
+.surface-background {
+    background: var(--surface-container-low);
+}
+
+li.space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+/* .pill {
+    background: var(--surface);
+    margin: 1em;
+} */
+
+/* .pill::before {
+    background: var(--surface);
+    border-radius: 50%;
+    padding: 0.5em;
+    content: "";
+    margin: 1em;
+} */
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.v-center {
+    display: flex;
+    align-items: center;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.font-large {
+    font-size: 40px;
+}
+
+.clock {
+    font-family: "Kode Mono", "Roboto", sans-serif;
+}
+
+.add_button {
+    position: sticky;
+    left: 100%;
+    bottom: 1em;
+    z-index: 1000; 
+}
+
+.view_tab {
+    height: 100%;
+    width: 100%;
+}
+
+#tab_activity {}
+    
+
+.cards_list {
+    height: 100%;
+    overflow: scroll;
+}
+
+.grid-center {
+    justify-content: center;
+}

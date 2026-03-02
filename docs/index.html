@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/beercss@4.0.7/dist/cdn/beer.min.css" rel="stylesheet">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@4.0.7/dist/cdn/beer.min.js"></script>
+    <script type="module"
+        src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@1.1.4/dist/cdn/material-dynamic-colors.min.js"></script>
+    <title>Clean Sweep</title>
+    <link rel="icon" href="./assets/single brown leaf on a little green background.jpg">
+    <script src="./script.js" type="module"></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<template id="card_template">
+    <article class="border round no-padding">
+        <img class="card_image responsive extra"
+            src="./assets/Plogging_with_Coastal_Striders_-_FUNK9730_(42405061590).jpg">
+        <div class="padding">
+            <span class="center">
+                <h5 class="card_date">Tuesday, January 1st, 2026</h5>
+            </span>
+            <span class="center">
+                <h3 class="card_clock clock">00:22</h3>
+            </span>
+            <span class="center">
+                <h3 class="card_bags">1 bag</h3>
+            </span>
+        </div>
+    </article>
+</template>
+
+<template id="leaderboard_template">
+    <tr>
+        <td>
+            <img class="leaderboard_pfp circle" src="assets/single brown leaf on a little green background.jpg">
+        </td>
+        <td class="leaderboard_name">Example</td>
+        <td class="leaderboard_duration clock">30m</td>
+        <td class="leaderboard_bags">1.0</td>
+    </tr>
+</template>
+
+<template id="friend_template">
+    <article class="no-padding">
+        <div class="grid no-space">
+            <div class="s6">
+                <img class="responsive large friend_activity_image"
+                    src="./assets/Plogging_with_Coastal_Striders_-_FUNK9730_(42405061590).jpg">
+            </div>
+            <div class="s6 padding">
+                <span class="width-100 center v-center">
+                    <span class="flex-row">
+                        <img src="./assets/plogging_profile_photo_1.jpg" class="friend_pfp circle small">
+                    <h2 class="center name">Timothy</h2></span>
+                    
+                </span>
+                <table>
+                    <thead>
+                        <th>&nbsp;</th>
+                        <th>Time</th>
+                        <th>Bags</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Most Recently</td>
+                            <td class="recent_time">00:10</td>
+                            <td class="recent_bags">2.0</td>
+                        </tr>
+                        <tr>
+                            <td>This Week</td>
+                            <td class="weekly_time">69:42</td>
+                            <td class="weekly_bags">1337</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </article>
+</template>
+
+
+<body class="bg-1">
+    <main class="responsive">
+        <div id="tab_activity" class="view_tab page padding active">
+            <header class="v-margin-1"><span class="center">
+                    <nav class="tabbed">
+                        <h5 id="activity_greeting" class="padding">Current activity</h5>
+                    </nav>
+                </span></header>
+            <dialog id="activity_dialog" class="top">
+                <h5>Top</h5>
+                <div class="field label prefix border">
+                    <i>attach_file</i>
+                    <input id="activity_file_input" type="file">
+                    <input type="text">
+                    <label>Activity image</label>
+                </div>
+                <div class="field label prefix border">
+                    <i>schedule</i>
+                    <input id="activity_start_time_input" type="time">
+                    <label>Start Time</label>
+                </div>
+                <div class="field label prefix border">
+                    <i>schedule</i>
+                    <input id="activity_end_time_input" type="time">
+                    <label>End Time</label>
+                </div>
+
+                <div class="field label prefix border">
+                    <i>numbers</i>
+                    <input id="activity_bags_input" type="number">
+                    <label>Bags</label>
+                </div>
+
+
+                <nav class="right-align">
+                    <button type="button" id="close_activity_dialog" class="border">Cancel</button>
+                    <button type="button" id="submit_activity_dialog">Confirm</button>
+                </nav>
+            </dialog>
+
+            <div class="cards_list">
+                <article class="border round padding center">
+                    <i>sentiment_sad</i>
+                </article>
+            </div>
+            <button type="button" id="open_activity_dialog" class="add_button extend square">
+                <i>add</i>
+                <span>New Activity</span>
+            </button>
+        </div>
+        <div id="tab_leaderboard" class="view_tab page padding">
+            <header class="v-margin-1"><span class="center">
+                    <nav class="tabbed">
+                        <h5 class="padding">Weekly Leaderboard</h5>
+                    </nav>
+                </span></header>
+            <article class="border round">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>PFP</th>
+                            <th>Name</th>
+                            <th>Time spent</th>
+                            <th>Bags</th>
+                        </tr>
+                    </thead>
+                    <tbody id="leaderboard_list">
+
+                    </tbody>
+                </table>
+            </article>
+        </div>
+        <div id="tab_group" class="view_tab page padding">
+            <header class="v-margin-1"><span class="center v-center">
+                    <nav class="tabbed v-center">
+                        <h5 id="group_heading" class="padding">Your Friends</h5>
+                    </nav>
+                </span></header>
+            <div id="friends_activity_list">
+
+            </div>
+        </div>
+        <div id="tab_settings" class="view_tab page padding">
+            <header class="v-center"><span class="center v-center">
+                    <nav class="tabbed v-center">
+                        <h5 class="padding">Settings</h5>
+                    </nav>
+                </span></header>
+            <article class="border round">
+                <fieldset class="no-border">
+                    <!-- <legend>Fill all fields</legend> -->
+                    <div class="field border label">
+                        <input id="user_name_input" type="text" maxlength="25">
+                        <label>Name</label>
+                    </div>
+                    <div class="field label prefix border">
+                        <i>attach_file</i>
+                        <input id="pfp_file_input" type="file">
+                        <input type="text">
+                        <label>Profile image</label>
+                    </div>
+                    <span class="vu-margin-1 center v-center">
+                        <img id="settings_pfp" class="h-margin-1 circle small"
+                            src="./assets/single brown leaf on a little green background.jpg">
+                        <h2 id="profile_name">USERNAME</h2>
+                    </span>
+                    <div class="center">
+                        <div id="bg_buttons" class="grid large-space padding grid-center">
+                            <a data_bg="bg-1"><img class="s3" src="./assets/3-maple-leaves.png"></a>
+                            <a data_bg="bg-2"><img class="s3" src="./assets/8bit_leaves.png"></a>
+                            <a data_bg="bg-3"><img class="s3" src="./assets/basic_8_bit_background.png"></a>
+                            <a data_bg="bg-5"><img class="s3" src="./assets/trash_bags_infinite.png"></a>
+                            <a data_bg="bg-6"><img class="s3" src="./assets/shamrock green.png"></a>
+                            <a data_bg="bg-7"><img class="s3" src="./assets/3-large-leaves.png"></a>
+                            <a data_bg="bg-8"><img class="s3" src="./assets/16-fall-leaves.png"></a>
+                            <a data_bg="bg-guy"><img class="s3" src="./assets/plogging_profile_photo_1.jpg"></a>
+                        </div>
+                    </div>
+
+                     <!--
+                    ./assets/3-maple-leaves.png
+                    ./assets/8bit_leaves.png
+                    ./assets/basic_8_bit_background.png
+                    ./assets/8bit-trash-pattern.png
+                    ./assets/trash_bags_infinite.png
+                    ./assets/shamrock green.png
+                    ./assets/3-large-leaves.png
+                    ./assets/16-fall-leaves
+                    ./assets/brown-leaf.png
+                    ./assets/plogging_profile_photo_1.jpg
+                    -->
+                    
+                    
+                    <!-- <div class="field border label">
+                    <select>
+                        <option>Item 1</option>
+                        <option>Item 2</option>
+                        <option>Item 3</option>
+                    </select>
+                    <label>Select</label>
+                </div> -->
+                    <!-- <div class="field border label">
+                    <textarea></textarea>
+                    <label>Textarea</label>
+                    <output>Helper text</output>
+                </div> -->
+                </fieldset>
+            </article>
+
+        </div>
+    </main>
+    <nav class="tabbed large bottom">
+        <a id="nav_activity" class="active">
+            <i>hiking</i>
+            <span>Activity</span>
+        </a>
+        <a id="nav_leaderboard" class="">
+            <i>taunt</i>
+            <span>Leaderboard</span>
+        </a>
+        <a id="nav_group" class="">
+            <i>sentiment_frustrated</i>
+            <span>Friends</span>
+        </a>
+        <a id="nav_settings">
+            <i>settings_heart</i>
+            <span>Settings</span>
+        </a>
+    </nav>
+
+
+</body>
+
+</html>
